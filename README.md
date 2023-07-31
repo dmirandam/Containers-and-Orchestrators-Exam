@@ -1,3 +1,3 @@
-# Examen Contenedores y Orquestadores
+# Containers and Orchestrators Exam
 
-El proyecto consiste en una aplicación web en C, empaquetada en Docker y desplegada en Kubernetes. El servidor web escucha en el puerto 8080 y responde con un mensaje básico. Se utiliza un archivo "Dockerfile" para construir el contenedor y tres archivos de configuración de Kubernetes ("deployment.yaml", "service.yaml" e "ingress.yaml") para su despliegue en el clúster. El Ingress permite acceder a la aplicación mediante diferentes rutas.
+The project consists of a web application in C, packaged in Docker and deployed in Kubernetes. The web server listens on port 8080 and responds with a basic message. A "Dockerfile" is used to build the container and three Kubernetes configuration files ("deployment.yaml", "service.yaml", and "ingress.yaml") are used to deploy it to the cluster. The Ingress allows access to the application through different routes.
