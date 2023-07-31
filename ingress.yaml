@@ -1,0 +1,30 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: servidor-c-ingress
+spec:
+  rules:
+  - host: "server.c.com"
+    http:
+      paths:
+      - pathType: Prefix
+        path: "/servicio-a"
+        backend:
+          service:
+            name: servicio-a-service
+            port:
+              number: 8081
+      - pathType: Prefix
+        path: "/servicio-b"
+        backend:
+          service:
+            name: servicio-b-service
+            port:
+              number: 8082
+      - pathType: Prefix
+        path: "/"
+        backend:
+          service:
+            name: servidor-c-service
+            port:
+              number: 8080
